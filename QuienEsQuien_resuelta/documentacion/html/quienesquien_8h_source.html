@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>guesswho: Fichero Fuente include/quienesquien.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">guesswho
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">quienesquien.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="quienesquien_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef _QUIENESQUIEN_H_</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define _QUIENESQUIEN_H_</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define DEBUG_QUIENESQUIEN 0</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;ctype.h&gt;</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;pregunta.h&quot;</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;bintree.h&quot;</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classQuienEsQuien.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="classQuienEsQuien.html">QuienEsQuien</a>{</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    vector&lt;string&gt; personajes;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    vector&lt;string&gt; atributos;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    vector&lt;vector&lt;bool&gt;&gt; tablero;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;</a> arbol;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;::node</a> jugada_actual;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">float</span> profundidad_nodo(<a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;::node</a> n);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    vector&lt;bool&gt; camino (<a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;::node</a> nodo);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    </div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">double</span> entropia_total();</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    </div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">double</span> entropia_atributo(<span class="keywordtype">int</span> valor_si, <span class="keywordtype">int</span> valor_no);</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">double</span> ganancia (<span class="keywordtype">double</span> entropia_atributo);</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">int</span> mejor_atributo(vector&lt;int&gt; atr_quedan);</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordtype">void</span> ID3(vector&lt;int&gt; mis_personajes, vector&lt;int&gt; mis_atributos, <a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;::node</a> n, <span class="keywordtype">int</span> atributo_mejor);</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <a class="code" href="classQuienEsQuien.html">QuienEsQuien</a>();</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <a class="code" href="classQuienEsQuien.html">QuienEsQuien</a>(<span class="keyword">const</span> <a class="code" href="classQuienEsQuien.html">QuienEsQuien</a> &amp;quienEsQuien);</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    ~<a class="code" href="classQuienEsQuien.html">QuienEsQuien</a>();</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">void</span> limpiar();</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <a class="code" href="classQuienEsQuien.html">QuienEsQuien</a>&amp; operator = (<span class="keyword">const</span> <a class="code" href="classQuienEsQuien.html">QuienEsQuien</a> &amp;quienEsQuien);</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    </div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keyword">friend</span> istream&amp; operator &gt;&gt; (istream&amp; is, <a class="code" href="classQuienEsQuien.html">QuienEsQuien</a> &amp;quienEsQuien);</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    </div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keyword">friend</span> ostream&amp; operator &lt;&lt; (ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classQuienEsQuien.html">QuienEsQuien</a> &amp;quienEsQuien);</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordtype">void</span> mostrar_estructuras_leidas();</div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;</a> crear_arbol(<span class="keywordtype">bool</span> mejora);</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    </div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordtype">void</span> usar_arbol(<a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;</a> arbol_nuevo);</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordtype">void</span> escribir_arbol_completo() <span class="keyword">const</span>;</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordtype">void</span> eliminar_nodos_redundantes();</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordtype">void</span> iniciar_juego();</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    set&lt;string&gt; informacion_jugada(<a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;::node</a> jugada_actual);</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    </div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordtype">float</span> profundidad_promedio_hojas(); </div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordtype">void</span> tablero_aleatorio(<span class="keywordtype">int</span> numero_de_personajes);</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordtype">void</span> construccion_basica(vector&lt;int&gt; descartes, <a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;::node</a> n, <span class="keywordtype">int</span> nivel);</div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordtype">void</span> preguntas_formuladas ( <a class="code" href="classbintree.html">bintree&lt;Pregunta&gt;::node</a> jugada);</div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordtype">void</span> aniade_personaje(<span class="keywordtype">string</span> nombre, vector&lt;bool&gt; caracteristicas);</div><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div><div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordtype">void</span> elimina_personaje(<span class="keywordtype">string</span> nombre);</div><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div><div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordtype">int</span> num_atributos();</div><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div><div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;};</div><div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div><div class="ttc" id="classbintree_html"><div class="ttname"><a href="classbintree.html">bintree&lt; Pregunta &gt;</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="classQuienEsQuien_html"><div class="ttname"><a href="classQuienEsQuien.html">QuienEsQuien</a></div><div class="ttdoc">T.D.A. QuienEsQuien. </div><div class="ttdef"><b>Definition:</b> quienesquien.h:36</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

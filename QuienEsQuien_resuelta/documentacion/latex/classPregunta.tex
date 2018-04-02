@@ -1,0 +1,191 @@
+\hypertarget{classPregunta}{}\section{Referencia de la Clase Pregunta}
+\label{classPregunta}\index{Pregunta@{Pregunta}}
+
+
+En cada estructura pregunta se almacena la cadena de la pregunta y el número de personajes que aún no han sido eliminados. Si el número de personajes es 1, entonces la cadena pregunta contiene el nombre del personaje.  
+
+
+
+
+{\ttfamily \#include $<$pregunta.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPregunta_aaac7bf3895f4b9259c870136a137b679}{Pregunta} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de la pregunta. \end{DoxyCompactList}\item 
+\hyperlink{classPregunta_a3f8660ca02e487029ab509fd85542d9b}{Pregunta} (const \hyperlink{classPregunta}{Pregunta} \&pregunta)
+\begin{DoxyCompactList}\small\item\em Constructor de copias. \end{DoxyCompactList}\item 
+\hyperlink{classPregunta_a0d66edc0f1495dbddafcee131663e00c}{Pregunta} (const string atributo, const int num\+\_\+personajes)
+\begin{DoxyCompactList}\small\item\em Constructor de la pregunta. \end{DoxyCompactList}\item 
+\hyperlink{classPregunta_a644894e8c4158aebd9e4ce443c59a0e4}{$\sim$\+Pregunta} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hyperlink{classPregunta}{Pregunta} \& \hyperlink{classPregunta_a37ef936f286e9fb87f57a985b5da9743}{operator=} (const \hyperlink{classPregunta}{Pregunta} \&pregunta)
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\item 
+string \hyperlink{classPregunta_a5fd2728f30ac0e0716bac24d25b67b87}{obtener\+\_\+pregunta} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve el atributo sobre el que se pregunta en el nodo. \end{DoxyCompactList}\item 
+string \hyperlink{classPregunta_acb40ed548f61ea961765fd82df23c8de}{obtener\+\_\+personaje} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve el personaje del nodo. \end{DoxyCompactList}\item 
+int \hyperlink{classPregunta_a172316625f4f451d5ddd3392aba8b348}{obtener\+\_\+num\+\_\+personajes} () const \hypertarget{classPregunta_a172316625f4f451d5ddd3392aba8b348}{}\label{classPregunta_a172316625f4f451d5ddd3392aba8b348}
+
+\begin{DoxyCompactList}\small\item\em Devuelve el número de personajes sin eliminar al llegar a esta pregunta. \end{DoxyCompactList}\item 
+bool \hyperlink{classPregunta_a034eab752003dd0d79d8c7227f79ce15}{es\+\_\+personaje} () const \hypertarget{classPregunta_a034eab752003dd0d79d8c7227f79ce15}{}\label{classPregunta_a034eab752003dd0d79d8c7227f79ce15}
+
+\begin{DoxyCompactList}\small\item\em Devuelve true si el nodo es de personaje. \end{DoxyCompactList}\item 
+bool \hyperlink{classPregunta_a6a79daf2b504199417b4ae900caabc96}{es\+\_\+pregunta} () const \hypertarget{classPregunta_a6a79daf2b504199417b4ae900caabc96}{}\label{classPregunta_a6a79daf2b504199417b4ae900caabc96}
+
+\begin{DoxyCompactList}\small\item\em Devuelve true si el nodo es de pregunta. \end{DoxyCompactList}\item 
+void \hyperlink{classPregunta_adbe4afe5c5f4ef5674be6f66f3d0d30a}{set\+\_\+atributo} (string atb)\hypertarget{classPregunta_adbe4afe5c5f4ef5674be6f66f3d0d30a}{}\label{classPregunta_adbe4afe5c5f4ef5674be6f66f3d0d30a}
+
+\begin{DoxyCompactList}\small\item\em Modifica el campo atributo. \end{DoxyCompactList}\item 
+void \hyperlink{classPregunta_a3c4abc1cff07c3e40dce2b6065ed2759}{set\+\_\+num\+\_\+personajes} (int num)\hypertarget{classPregunta_a3c4abc1cff07c3e40dce2b6065ed2759}{}\label{classPregunta_a3c4abc1cff07c3e40dce2b6065ed2759}
+
+\begin{DoxyCompactList}\small\item\em Modifica el campo numero de personajes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classPregunta_a32cc45df44752f792d258d26e3c80b0f}{operator$<$$<$} (ostream \&os, const \hyperlink{classPregunta}{Pregunta} \&pregunta)
+\begin{DoxyCompactList}\small\item\em Operador de inserción de flujo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+En cada estructura pregunta se almacena la cadena de la pregunta y el número de personajes que aún no han sido eliminados. Si el número de personajes es 1, entonces la cadena pregunta contiene el nombre del personaje. 
+
+\subsection{Documentación del constructor y destructor}
+\index{Pregunta@{Pregunta}!Pregunta@{Pregunta}}
+\index{Pregunta@{Pregunta}!Pregunta@{Pregunta}}
+\subsubsection[{\texorpdfstring{Pregunta()}{Pregunta()}}]{\setlength{\rightskip}{0pt plus 5cm}Pregunta\+::\+Pregunta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPregunta_aaac7bf3895f4b9259c870136a137b679}{}\label{classPregunta_aaac7bf3895f4b9259c870136a137b679}
+
+
+Constructor por defecto de la pregunta. 
+
+Reserva los recursos. \index{Pregunta@{Pregunta}!Pregunta@{Pregunta}}
+\index{Pregunta@{Pregunta}!Pregunta@{Pregunta}}
+\subsubsection[{\texorpdfstring{Pregunta(const Pregunta \&pregunta)}{Pregunta(const Pregunta &pregunta)}}]{\setlength{\rightskip}{0pt plus 5cm}Pregunta\+::\+Pregunta (
+\begin{DoxyParamCaption}
+\item[{const {\bf Pregunta} \&}]{pregunta}
+\end{DoxyParamCaption}
+)}\hypertarget{classPregunta_a3f8660ca02e487029ab509fd85542d9b}{}\label{classPregunta_a3f8660ca02e487029ab509fd85542d9b}
+
+
+Constructor de copias. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pregunta} & \hyperlink{classPregunta}{Pregunta} a copiar\\
+\hline
+\end{DoxyParams}
+Construye la pregunta duplicando el contenido de {\itshape pregunta} en la pregunta receptora. \index{Pregunta@{Pregunta}!Pregunta@{Pregunta}}
+\index{Pregunta@{Pregunta}!Pregunta@{Pregunta}}
+\subsubsection[{\texorpdfstring{Pregunta(const string atributo, const int num\+\_\+personajes)}{Pregunta(const string atributo, const int num_personajes)}}]{\setlength{\rightskip}{0pt plus 5cm}Pregunta\+::\+Pregunta (
+\begin{DoxyParamCaption}
+\item[{const string}]{atributo, }
+\item[{const int}]{num\+\_\+personajes}
+\end{DoxyParamCaption}
+)}\hypertarget{classPregunta_a0d66edc0f1495dbddafcee131663e00c}{}\label{classPregunta_a0d66edc0f1495dbddafcee131663e00c}
+
+
+Constructor de la pregunta. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em atributo} & Atributo sobre el que se pregunta en este nodo. En el caso de que haya un único personaje restante, este campo almacena su nombre. \\
+\hline
+{\em num\+\_\+personajes} & Número de personajes que quedan al llegar a esta pregunta. \\
+\hline
+\end{DoxyParams}
+\index{Pregunta@{Pregunta}!````~Pregunta@{$\sim$\+Pregunta}}
+\index{````~Pregunta@{$\sim$\+Pregunta}!Pregunta@{Pregunta}}
+\subsubsection[{\texorpdfstring{$\sim$\+Pregunta()}{~Pregunta()}}]{\setlength{\rightskip}{0pt plus 5cm}Pregunta\+::$\sim$\+Pregunta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPregunta_a644894e8c4158aebd9e4ce443c59a0e4}{}\label{classPregunta_a644894e8c4158aebd9e4ce443c59a0e4}
+
+
+Destructor. 
+
+Libera los recursos ocupados por la pregunta receptora. 
+
+\subsection{Documentación de las funciones miembro}
+\index{Pregunta@{Pregunta}!obtener\+\_\+personaje@{obtener\+\_\+personaje}}
+\index{obtener\+\_\+personaje@{obtener\+\_\+personaje}!Pregunta@{Pregunta}}
+\subsubsection[{\texorpdfstring{obtener\+\_\+personaje() const }{obtener_personaje() const }}]{\setlength{\rightskip}{0pt plus 5cm}string Pregunta\+::obtener\+\_\+personaje (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classPregunta_acb40ed548f61ea961765fd82df23c8de}{}\label{classPregunta_acb40ed548f61ea961765fd82df23c8de}
+
+
+Devuelve el personaje del nodo. 
+
+\begin{DoxyPrecond}{Precondición}
+El nodo debe ser un nodo de personaje (num\+\_\+personaje==1). 
+\end{DoxyPrecond}
+\index{Pregunta@{Pregunta}!obtener\+\_\+pregunta@{obtener\+\_\+pregunta}}
+\index{obtener\+\_\+pregunta@{obtener\+\_\+pregunta}!Pregunta@{Pregunta}}
+\subsubsection[{\texorpdfstring{obtener\+\_\+pregunta() const }{obtener_pregunta() const }}]{\setlength{\rightskip}{0pt plus 5cm}string Pregunta\+::obtener\+\_\+pregunta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classPregunta_a5fd2728f30ac0e0716bac24d25b67b87}{}\label{classPregunta_a5fd2728f30ac0e0716bac24d25b67b87}
+
+
+Devuelve el atributo sobre el que se pregunta en el nodo. 
+
+\begin{DoxyPrecond}{Precondición}
+El nodo debe ser un nodo de pregunta (num\+\_\+personaje$>$1). 
+\end{DoxyPrecond}
+\index{Pregunta@{Pregunta}!operator=@{operator=}}
+\index{operator=@{operator=}!Pregunta@{Pregunta}}
+\subsubsection[{\texorpdfstring{operator=(const Pregunta \&pregunta)}{operator=(const Pregunta &pregunta)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pregunta}\& Pregunta\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Pregunta} \&}]{pregunta}
+\end{DoxyParamCaption}
+)}\hypertarget{classPregunta_a37ef936f286e9fb87f57a985b5da9743}{}\label{classPregunta_a37ef936f286e9fb87f57a985b5da9743}
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em pregunta} & \hyperlink{classPregunta}{Pregunta} a copiar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Referencia a la pregunta receptora.
+\end{DoxyReturn}
+Asigna el valor de la pregunta duplicando el contenido de {\itshape pregunta} en la pregunta receptora. 
+
+\subsection{Documentación de las funciones relacionadas y clases amigas}
+\index{Pregunta@{Pregunta}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Pregunta@{Pregunta}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{const {\bf Pregunta} \&}]{pregunta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classPregunta_a32cc45df44752f792d258d26e3c80b0f}{}\label{classPregunta_a32cc45df44752f792d258d26e3c80b0f}
+
+
+Operador de inserción de flujo. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em os} & Stream de salida. \\
+\hline
+{\em pregunta} & \hyperlink{classPregunta}{Pregunta} a escribir. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Referencia al stream de salida.
+\end{DoxyReturn}
+Escribe en la salida la pregunta, escribiendo primero la cadena de la pregunta y después el número de personajes que quedan al llegar a esta pregunta. 
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+include/pregunta.\+h\end{DoxyCompactItemize}
